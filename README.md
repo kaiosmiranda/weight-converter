@@ -1,18 +1,14 @@
 # weight-converter
 
-Conversor de unidades de massa desenvolvido em Python.
+A Python command-line tool that converts weight between kilograms and pounds.
 
-## O que faz
-
-Recebe um valor de peso e a unidade informada pelo usuário (kg ou lbs) e retorna o valor convertido para a outra unidade.
-
-## Como usar
+## Usage
 
 ```bash
-python weight_converter.py
+python3 app.py
 ```
 
-Exemplo de execução:
+Example:
 
 ```
 Weight: 170
@@ -20,32 +16,32 @@ Weight: 170
 Weight in Kg: 76.5
 ```
 
-## Entradas aceitas
+## Accepted inputs
 
-| Entrada | Significado | Resultado |
-|--------|-------------|-----------|
-| `k` ou `K` | O valor está em lbs | Converte para kg |
-| `l` ou `L` | O valor está em kg | Converte para lbs |
+| Input | Meaning | Output |
+|-------|---------|--------|
+| `k` or `K` | Value is in lbs | Converts to kg |
+| `l` or `L` | Value is in kg | Converts to lbs |
 
-## Fórmulas utilizadas
+## Formulas
 
-- **lbs → kg:** `peso × 0.450`
-- **kg → lbs:** `peso ÷ 0.450`
+- **lbs → kg:** `weight × 0.450`
+- **kg → lbs:** `weight ÷ 0.450`
 
-## Conceitos aplicados
+## Concepts applied
 
-- Variáveis e tipos de dados
-- Conversão de tipos (`float`)
-- Entrada do usuário (`input`)
-- Normalização de string (`.lower()`)
-- Condicionais (`if / elif / else`)
+- Variables and data types
+- Type conversion (`float`)
+- User input (`input`)
+- String normalization (`.lower()`)
+- Conditionals (`if / elif / else`)
 
-## Melhorias futuras
+## Planned improvements
 
-- [ ] Tratamento de erros para entradas inválidas (`try/except`)
-- [ ] Suporte a outras unidades (gramas, toneladas)
-- [ ] Interface via linha de comando com argumentos (`argparse`)
+- [ ] Error handling for invalid inputs (`try/except`)
+- [ ] Support for additional units (grams, tonnes)
+- [ ] Command-line arguments (`argparse`)
 
 ## Status
 
-`v1.0` — funcional. Melhorias planejadas conforme avanço no currículo de Python.
+`v1.0` — functional. Improvements planned as Python studies progress.
